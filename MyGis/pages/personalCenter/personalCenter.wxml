@@ -1,0 +1,74 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<view class="container-pc">
+  <view class="userinfo">
+   <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 一键登陆 </button>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="usermotto">
+    <view class="weui-cells__title">个性签名</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cells__title">{{signature}}</view>
+            </view>
+      </view>
+
+
+  <view class="weui-cells__title"></view>
+
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" bindtap='setSignature'>
+        <image src='../../images/signature.png' class='lists-pc' ></image>
+        <view class=".weui-cell__bd-pc">设置个性签名</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0"></view>
+      </view>
+    </view>
+
+     <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" bindtap='changeApply'>
+        <image src='../../images/alter.png' class='lists-pc' ></image>
+        <view class=".weui-cell__bd-pc">修改报名表</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0"></view>
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" bindtap='bookManagement'>
+        <image src='../../images/Bm.png' class='lists-pc' ></image>
+        <view class=".weui-cell__bd-pc">图书管理</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0"></view>
+      </view>
+    </view>
+<!--
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" bindtap='payMoney'>
+        <image src='../../images/pay.png' class='lists-pc' ></image>
+        <view class=".weui-cell__bd-pc">会费缴纳</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0"></view>
+      </view>
+    </view>
+-->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" bindtap='help'>
+        <image src='../../images/help.png' class='lists-pc' ></image>
+        <view class=".weui-cell__bd-pc">帮助</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0"></view>
+      </view>
+    </view>
+
+     <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" bindtap='tip'>
+        <image src='../../images/feedback.png' class='lists-pc' ></image>
+        <view class=".weui-cell__bd-pc">建议</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0"></view>
+      </view>
+    </view>
+
+
+  </view>
+  
+</view>

@@ -1,0 +1,7 @@
+.page{
+    background-color: #FFFFFF;
+}
+.numberText{
+  text-decoration:underline;
+  font-weight: bold;
+}

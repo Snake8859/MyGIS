@@ -1,0 +1,4 @@
+/* pages/apply/apply.wxss */
+.word{
+  color: #888888;
+}

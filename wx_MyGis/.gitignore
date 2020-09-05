@@ -1,0 +1,4 @@
+.settings/
+build/
+src/c3p0-config.xml
+*.properties

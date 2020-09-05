@@ -1,0 +1,106 @@
+/**index.wxss**/
+
+.page__hd_index {
+    padding: 40px;
+}
+
+
+
+.page__title_index {
+    display:  flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.text_title{
+    text-align: left;
+    font-size: 38rpx;
+    font-weight: 400;
+    margin-top: 20rpx;
+
+}
+.page__desc_index {
+    margin-top: 5px;
+    color: #888888;
+    text-align: left;
+    font-size: 14px;
+}
+
+.image-index{
+  height: 110rpx;
+  width: 110rpx;
+  margin-left: 200rpx;
+  margin-top: 20rpx;
+}
+
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 5rpx;
+}
+.img{
+  height: 180rpx;
+}
+
+
+
+.container-index{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image_swiper{
+  height: 400rpx;
+  width: 100%;
+}
+
+.wx-image{
+  height: 100%;
+  width: 100%;
+}
+
+.weui-article__h1-index{
+  font-weight: bold;
+  font-size:20px;
+  margin-bottom:.9em
+  }
+
+  .weui-article__title{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 20rpx;
+  }
+
+.footer-index {
+    margin-top: 5px;
+    color: #888888;
+    text-align: center;
+    font-size: 14px;
+}
+
+.text-index1_button{
+    margin-top: 5px;
+    color:#02bfc5;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing:0.5mm;
+}
+
+
+
+.text-index{
+  font-family: "楷体";
+  line-height:2em;
+  letter-spacing:1mm;
+}
+
+.text-index1{
+  font-family:"楷体";
+  line-height:1.8em;
+  letter-spacing:0.5mm;
+}
+
+.weui-flex{-webkit-box-align:center;-webkit-align-items:center;align-items:center}.weui-cells{margin-top:0;opacity:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:.3s;transition:.3s}.weui-cells:after,.weui-cells:before{display:none}.weui-cells_show{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}.weui-cell:before{right:15px}.kind-list__item{margin:10px 0;background-color:#fff;border-radius:2px;overflow:hidden}.kind-list__item:first-child{margin-top:0}.kind-list__img{width:30px;height:30px}.kind-list__item-hd{padding:20px;-webkit-transition:opacity .3s;transition:opacity .3s}.kind-list__item-hd_show{opacity:.4}.kind-list__item-bd{height:0;overflow:hidden}.kind-list__item-bd_show{height:auto}

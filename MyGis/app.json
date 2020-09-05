@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/apply/apply",
+    "pages/apply/apply_success",
+    "pages/personalCenter/personalCenter",
+    "pages/personalCenter/signature",
+    "pages/apply/apply_update",
+    "pages/personalCenter/tip"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#02bfc5",
+    "navigationBarTitleText": "我的GIS",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/indexed.png"
+      },
+      {
+        "pagePath": "pages/apply/apply",
+        "text": "报名",
+        "iconPath": "images/apply.png",
+        "selectedIconPath": "images/applied.png"
+      },
+      {
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "个人中心",
+        "iconPath": "images/pc.png",
+        "selectedIconPath": "images/pced.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

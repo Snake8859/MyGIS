@@ -1,0 +1,11 @@
+<!--pages/personalCenter/signature.wxml-->
+<view style='height:{{screenHeight}}rpx'>
+  <view class='container-signature'>
+    <form bindsubmit='changeSignature'>
+        <view class='signature-Box'>
+          <textarea name='signatureWord' class='signature-textarea' placeholder='填写你的个性签名吧'></textarea>
+        </view>
+        <button class='signature-button'  form-type='submit' type='primary'>确定</button>
+    </form>
+  </view>
+</view>

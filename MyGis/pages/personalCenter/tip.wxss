@@ -1,0 +1,34 @@
+/* pages/personalCenter/tip.wxss */
+.container-tip {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:white;
+} 
+
+.tipBox{
+  height: 100%;
+  width: 80%;
+}
+
+.tip-textarea{
+ margin-top: 200rpx;
+ background-color:white;
+ box-shadow: 0rpx 1rpx 20rpx  2rpx rgba(1, 1, 1, 0.411);
+ border: 1px solid black;
+}
+
+.tip-input{
+  margin-top: 30rpx;
+  background-color: white;
+  box-shadow: 0rpx 1rpx 20rpx  2rpx rgba(1, 1, 1, 0.411);
+  border: 1px solid black;
+}
+
+.tip-button{
+  height: 80rpx;
+  width: 30%;
+  margin-top: 100rpx;
+}

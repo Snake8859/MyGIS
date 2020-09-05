@@ -1,0 +1,210 @@
+<!--index.wxml-->
+<view class="page">
+    <view class="page__hd_index">
+      
+        <view class="page__title_index">
+          <text class='text_title'>中南林GIS协会</text>
+          <image class='image-index' src='../../images/gis2.png'></image>
+        </view>
+     
+        <view class="page__desc_index">HELLO WORLD;HEY GIS!</view>
+    </view>
+
+
+  <view class="page__bd page__bd_spacing">
+    <view class="kind-list">
+      <block wx:for="{{list}}" wx:key="id">
+        <view class="kind-list__item">
+          <view  id='{{item.id}}' class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
+              <view class="weui-flex__item">{{item.name}}</view>
+              <image class="kind-list__img" src="../../images/icon_nav_form.png"></image>
+          </view>
+              <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
+                  <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
+                    <block wx:if="{{item.number==0}}">
+                      <view class="weui-article__p">
+                    <text class='text-index1' space='nbsp'>    GIS协会成立于2007年，专注于通过课堂的形式培养大学生的计算机思维，主要针对于编程方面(开发语言:C#)。旨在共同学习编程方面的知识，增强会员们的编程兴趣。我们是一个以无私奉献的精神薪火相传的学术性协会，为广大会员们提供了一个资源共享的学习平台，提高会员们对专业知识学习的热情，以及加强会员之间的互动与探讨。</text>
+                    </view>
+                    <view class="weui-article__p">
+                      <view class='container-index'>
+                        <image class="weui-article__img" src="../../images/GISHistory.png" mode="aspectFit" class='img' />
+                      </view>
+                    </view>
+                      <view  class="weui-cell weui-cell_access"></view>
+                    </block>
+                    <block wx:if="{{item.number==1}}">
+                      <view class="weui-article__p">
+                        <text class='text-index1'  space='nbsp'>    随着GIS协会的发展，我们的活动也越来越多。就在去年，我们举行了GIS十周年的活动，将往届的学长，学姐邀请回校，为学弟学妹们分享和交流无论是工作，还是考研上的丰富经验。\n    除此之外，我们还有每届一次的总结大会，这是属于你们的舞台，你们将利用你们这一年在协会所学，打造属于自己的小应用，在总结大会上展示你的作品。</text>
+                    </view>
+                    <view class='container-index'>
+                      <swiper autoplay="True" class="image_swiper" indicator-dots="True" interval="5000">
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="../../images/tenYears1.jpg"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="../../images/tenYears2.jpg"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="../../images/tenYears3.jpg"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="../../images/tenYears4.jpg"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="../../images/tenYears5.jpg"
+                          />
+                        </swiper-item>
+                      </swiper>
+                    </view>
+                      <view class='container-index'>
+                        <text class='text-index1_button'>十周年活动</text>
+                      </view>
+                    </block>
+                    
+                      <block wx:if="{{item.number==2}}">
+                          <view class="weui-article__p">
+                        <text class='text-index1' space='nbsp'>    在这几年，延续的传统是每周六，周日晚上七点到九点，学长学姐们作为讲师给大家普及一下C#的有关知识，为大家开启编程世界的大门。\n    期间，我们协会还会在休闲的时间里举办一些活动，提升大家参与的积极性。当然，作为一个学术氛围浓厚的组织，我们关心每个同学的学习进度，对于学习进度没更上的，我们会尽我们所能帮助你，直到大家能够写出属于自己的成果。</text>
+                    <view class='container-index'>
+                      <swiper autoplay="True" class="image_swiper" indicator-dots="True" interval="5000">
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="../../images/teacher1.jpg"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="../../images/teacher2.jpg"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="../../images/teacher3.jpg"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="../../images/teacher4.jpg"
+                          />
+                        </swiper-item>
+                      </swiper>
+                    </view>
+                    </view>
+                    <view class='container-index'>
+                        <text class='text-index1_button'>协会日常教学</text>
+                      </view>
+                      </block>
+                      <block wx:if="{{item.number==3}}">
+                           <text class='text-index1' space='nbsp'>    除了在这个小程序里，你还可以通过更多的方式来了解我们，比如访问我们的协会官网<text  style='font-weight: bold;'>www.heygis.com</text> ，再比如关注我们的公众号--<text style='font-weight: bold;'>地理信息科学</text>。</text>
+                         <view  class="weui-cell weui-cell_access"></view>   
+                      </block>
+                  </view>
+              </view>
+          </view>
+      </block>
+
+    <view class ='container-index'>
+        <text class="footer-index">
+          我们是中南林GIS协会;
+          我们严谨但不呆板,专一但不钻牛角尖;
+          我们坚持授新生以渔,培养计算机思维;
+          在这里,我们探讨合作,将想法变为现实;
+          我们没什么了不起,只是选择了我们的你们成为了不起;
+        </text>
+      </view>
+
+    </view>
+  </view>
+ 
+<!-- 样式二
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1-index">简要介绍</view>
+            <view class="divLine"></view>
+            <view class="weui-article__section">
+                <view class="weui-article__title">1. 了解我们</view>
+                <view class="weui-article__section">
+                   
+                    <view class="weui-article__p">
+                    <text class='text-index' space='nbsp'>\n  GIS协会成立于2007年，专注于通过课堂的形式培养大学生的计算机思维，主要针对于编程方面C#。旨在共同学习编程方面的知识，增强会员们的编程兴趣。我们是一个以无私奉献的精神薪火相传的学术性协会，为广大会员们提供了一个资源共享的学习平台，提高会员们对专业知识学习的热情，以及加强会员之间的互动与探讨。</text>
+                    </view>
+                    <view class="weui-article__p">
+                      <view class='container-index'>
+                        <image class="weui-article__img" src="../../images/GISHistory.png" mode="aspectFit" class='img' />
+                      </view>
+                    </view>
+              </view>
+                <view class="divLine"></view>
+                <view class="weui-article__section">
+                    <view class="weui-article__title">2. 协会日常</view>
+                    <view class="weui-article__p">
+                        <text class='text-index' space='nbsp'>\n  在这几年，延续的传统是每周六，周日晚上七点到九点，学长学姐们作为讲师给大家普及一下C#的有关知识，为大家开启编程世界的大门。\n  期间，我们协会还会在一些休闲时间举办一些活动，提升大家参与的积极性。当然，作为一个学术氛围浓厚的组织，我们关心每个同学的学习进度，对于学习进度没更上的，我们会尽我们所能帮助你，直到大家能够写出属于自己的成果。</text>
+                    </view>
+                    <view class='container-index'>
+                      <swiper autoplay="True" class="image_swiper" indicator-dots="True" interval="5000">
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="http://www.snake8859.top:8080/wx_MyGis/images/teacher1.png"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="http://www.snake8859.top:8080/wx_MyGis/images/teacher2.png"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="http://www.snake8859.top:8080/wx_MyGis/images/teacher3.png"
+                          />
+                        </swiper-item>
+                      </swiper>
+                    </view>
+                </view>
+                <view class="divLine"></view>
+                <view class="weui-article__section">
+                    <view class="weui-article__title">3. 协会活动</view>
+                    <view class="weui-article__p">
+                        <text class='text-index' space='nbsp'>\n  随着GIS协会的发展，我们的活动也越来越多。就在去年，我们举行了GIS十周年的活动，将往届的学长，学姐邀请回校，为学弟学妹们分享交流无论是工作，还是考研上的丰富经验。\n  除此之外，我们还有每届一次的总结大会，这是属于你们的舞台，你们将利用你们这一年在协会所学，打造属于自己的小小应用，然后在总结大会上展示你的作品。</text>
+                    </view>
+                    <view class='container-index'>
+                      <swiper autoplay="True" class="image_swiper" indicator-dots="True" interval="5000">
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="http://www.snake8859.top:8080/wx_MyGis/images/IMG_1883.JPG "
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="http://www.snake8859.top:8080/wx_MyGis/images/IMG_1886.JPG"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="http://www.snake8859.top:8080/wx_MyGis/images/IMG_1887.JPG"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="http://www.snake8859.top:8080/wx_MyGis/images/IMG_1863.JPG"
+                          />
+                        </swiper-item>
+                        <swiper-item>
+                          <image class="wx-image" mode="aspectFill" src="http://www.snake8859.top:8080/wx_MyGis/images/IMG_1864.JPG"
+                          />
+                        </swiper-item>
+                      </swiper>
+                    </view>
+                </view>
+                 <view class="divLine"></view>
+                <view class="weui-article__section">
+                    <view class="weui-article__title">4. 更多的我们</view>
+                    <view class="weui-article__p">
+                        <text class='text-index' space='nbsp'>\n  除了在这个小程序里，你还可以通过更多的方式来了解我们，比如访问我们的协会官网<text  style='font-weight: bold;'>www.heygis.com</text> ，再比如关注我们的公众号--<text style='font-weight: bold;'>地理信息科学</text>。</text>
+                        <view class ='container-index'>
+                        <text class="footer-index">
+                        我们是中南林GIS协会;
+                        我们严谨但不呆板,专一但不钻牛角尖;
+                        我们坚持授新生以渔,培养计算机思维;
+                        在这里,我们探讨合作,将想法变为现实;
+                        我们没什么了不起,只是选择了我们的你们成为了不起;
+                        </text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    -->
+</view>

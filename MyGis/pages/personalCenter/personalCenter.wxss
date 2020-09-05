@@ -1,0 +1,55 @@
+/* pages/personalCenter/personalCenter.wxss */
+/**index.wxss**/
+
+.container-pc {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+} 
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #02bfc5;
+  /*border: 1px solid rebeccapurple;*/
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 60%;
+  /*border: 1px solid red;*/
+}
+
+.lists-pc{
+  height:50rpx;
+  width: 50rpx;
+}
+
+.userinfo-nickname {
+  color:black;
+  font-weight :bold;
+  font-size:x-large;
+  margin-left: 30rpx;
+  /*border: 1px solid green;*/
+}
+
+.usermotto {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid crimson;*/
+}
+
+.weui-cell__bd-pc
+{
+-webkit-box-flex:1;
+-webkit-flex:1;
+ flex:1;
+ margin-left: 15rpx;
+
+}
